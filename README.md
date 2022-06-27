@@ -38,6 +38,7 @@ service/argocd-server                             NodePort    10.96.101.169    <
 # Ui will comeup , id = admin, password need to reset, 
 For Argo CD v1.8 and earlier, the initial password is set to the name of the server pod, as per the getting started guide. For Argo CD v1.9 and later, the initial password is available from a secret named argocd-initial-admin-secret. To change the password, edit the argocd-secret secret and update the admin.password field with a new bcrypt hash. You can use a site like https://www.browserling.com/tools/bcrypt to generate a new hash. For example:
 #bcrypt(password)=<encrypted passowrd>
+
 kubectl -n argocd patch secret argocd-secret \
 -p '{"stringData": {
 "admin.password": "<encrypted passowrd>",
