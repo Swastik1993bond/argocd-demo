@@ -1,4 +1,4 @@
-# argocd-demo
+# ArgoCD-Demo
 ArgoDC Demo
 
 ![image](https://user-images.githubusercontent.com/84220333/175857423-3f3a12b9-efd3-40d8-98e8-18eb6684bb4e.png)
@@ -8,7 +8,7 @@ ArgoDC Demo
 
 # How to install ArgoCD
 
-################################################################################################################################  
+
 # Get the cluster info first 
 
 kubectl cluster-info
