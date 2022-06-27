@@ -3,8 +3,10 @@ ArgoDC Demo
 
 ![image](https://user-images.githubusercontent.com/84220333/175857423-3f3a12b9-efd3-40d8-98e8-18eb6684bb4e.png)
 
+![argoCd](https://user-images.githubusercontent.com/84220333/175859599-9a646494-74c5-45d6-baee-abd27cfb2c89.jpg)
 
-How to install ArgoCD
+
+# How to install ArgoCD
 
 ################################################################################################################################  
 # Get the cluster info first 
