@@ -14,9 +14,11 @@ kubectl cluster-info
 # This will create a new namespace, argocd, where Argo CD services and application resources will live.
 
 kubectl create namespace argocd
+
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v2.4.2/manifests/install.yaml
 
 # Get all the namespace information 
+
 kubectl -n argocd get all
 
 # The argocd server if shown as ClusterIP, then we need to update it to NodePort or Loadbalancer or need to pass via ingress else it wont expose to outside network.
@@ -35,6 +37,7 @@ kubectl get nodes -o wide
 # Now open the node with port information here its 32396 for http and 31672 for https , see the output of service/argocd-server
 
 NAME                                              TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                      AGE
+
 service/argocd-server                             NodePort    10.96.101.169    <none>        80:32396/TCP,443:31672/TCP   2m6s
 
 # Ui will comeup , id = admin, password need to reset, 
